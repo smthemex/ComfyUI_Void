@@ -1,0 +1,1107 @@
+{
+  "id": "0db3cdaf-ac2e-4240-a85c-ea694be0f7b7",
+  "revision": 0,
+  "last_node_id": 39,
+  "last_link_id": 37,
+  "nodes": [
+    {
+      "id": 9,
+      "type": "PreviewAny",
+      "pos": [
+        21575.30571856257,
+        -339.4833138116606
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 25
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 3,
+      "type": "Void_SM_Clip",
+      "pos": [
+        21537.01840634931,
+        -700.6173759617839
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 2,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            24
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Void_SM_Clip"
+      },
+      "widgets_values": [
+        "CogVideoX-Fun-V1.5-5b-InP-T5-bf16.safetensors",
+        "none"
+      ]
+    },
+    {
+      "id": 1,
+      "type": "Void_SM_Model",
+      "pos": [
+        22277.079219644453,
+        -654.280934589335
+      ],
+      "size": [
+        270,
+        130
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Void_SM_Model"
+      },
+      "widgets_values": [
+        "CogVideoX-Fun-V1.5-5b-InP-transformers.safetensors",
+        "none",
+        "void_pass1.safetensors",
+        "none"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "PreviewAny",
+      "pos": [
+        21994.59894515688,
+        -281.1005617369677
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 7
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 7,
+      "type": "Void_LATENTS",
+      "pos": [
+        21949.217033518526,
+        -558.7949106276008
+      ],
+      "size": [
+        291.6171875,
+        242
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 20
+        },
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 11
+        },
+        {
+          "name": "quadmask_video",
+          "type": "IMAGE",
+          "link": 13
+        }
+      ],
+      "outputs": [
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": [
+            3,
+            7
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Void_LATENTS"
+      },
+      "widgets_values": [
+        1109609887,
+        "randomize",
+        672,
+        384,
+        197,
+        85,
+        true
+      ]
+    },
+    {
+      "id": 20,
+      "type": "Void_SM_VAE",
+      "pos": [
+        21975.31194183551,
+        -689.9254623405179
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": [
+            20,
+            21
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Void_SM_VAE"
+      },
+      "widgets_values": [
+        "CogVideoX-Fun-V1.5-5b-InP.safetensors"
+      ]
+    },
+    {
+      "id": 26,
+      "type": "PreviewAny",
+      "pos": [
+        21236.919021912287,
+        -369.9561979476633
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 35
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 27,
+      "type": "PreviewAny",
+      "pos": [
+        20503.683007181105,
+        -486.1839613500607
+      ],
+      "size": [
+        302.04760375401383,
+        116.68879266069894
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 31
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 24,
+      "type": "Void_Selectpoints",
+      "pos": [
+        20438.363939138846,
+        -638.1261716556788
+      ],
+      "size": [
+        352.90759822249674,
+        88
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 30
+        }
+      ],
+      "outputs": [
+        {
+          "name": "config_path",
+          "type": "STRING",
+          "links": [
+            31
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Void_Selectpoints"
+      },
+      "widgets_values": [
+        "A lime falls on the table."
+      ]
+    },
+    {
+      "id": 21,
+      "type": "Void_Encoder",
+      "pos": [
+        21502.74218709146,
+        -555.6704369203422
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 24
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            23,
+            25
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Void_Encoder"
+      },
+      "widgets_values": [
+        "A lime falls on the table.",
+        true,
+        "cuda"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "Void_SM_KSampler",
+      "pos": [
+        22313.43521919159,
+        -388.63946264808396
+      ],
+      "size": [
+        271.255859375,
+        146
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 2
+        },
+        {
+          "name": "latent",
+          "shape": 7,
+          "type": "LATENT",
+          "link": 3
+        },
+        {
+          "name": "positive",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": 23
+        }
+      ],
+      "outputs": [
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": [
+            22
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Void_SM_KSampler"
+      },
+      "widgets_values": [
+        20,
+        true,
+        4
+      ]
+    },
+    {
+      "id": 17,
+      "type": "CreateVideo",
+      "pos": [
+        22642.443674188336,
+        -554.5463474760198
+      ],
+      "size": [
+        270,
+        78
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 18
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 16
+        },
+        {
+          "name": "fps",
+          "type": "FLOAT",
+          "widget": {
+            "name": "fps"
+          },
+          "link": 15
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            14
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CreateVideo"
+      },
+      "widgets_values": [
+        30
+      ]
+    },
+    {
+      "id": 18,
+      "type": "Void_Vae_Decoder",
+      "pos": [
+        22652.95944001667,
+        -684.0798672228598
+      ],
+      "size": [
+        210,
+        78
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 21
+        },
+        {
+          "name": "latents",
+          "type": "LATENT",
+          "link": 22
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            18
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Void_Vae_Decoder"
+      },
+      "widgets_values": [
+        true
+      ]
+    },
+    {
+      "id": 16,
+      "type": "SaveVideo",
+      "pos": [
+        22597.928814381998,
+        -439.50704392316504
+      ],
+      "size": [
+        374,
+        372.66727874446934
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 14
+        }
+      ],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "video/ComfyUI",
+        "mp4",
+        "h264"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "GetVideoComponents",
+      "pos": [
+        22154.643389486366,
+        -941.9088374232124
+      ],
+      "size": [
+        140,
+        66
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 37
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            13
+          ]
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": null
+        },
+        {
+          "name": "fps",
+          "type": "FLOAT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GetVideoComponents"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 13,
+      "type": "GetVideoComponents",
+      "pos": [
+        21918.633155858748,
+        -920.6612801107184
+      ],
+      "size": [
+        140,
+        66
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 10
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            11
+          ]
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            16
+          ]
+        },
+        {
+          "name": "fps",
+          "type": "FLOAT",
+          "links": [
+            15
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GetVideoComponents"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 31,
+      "type": "Void_GetQuadMask",
+      "pos": [
+        21198.881443064565,
+        -704.7767120546496
+      ],
+      "size": [
+        274.33224301095834,
+        199.96326371258772
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 2,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "quadmask_video",
+          "type": "STRING",
+          "links": [
+            35
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Void_GetQuadMask"
+      },
+      "widgets_values": [
+        "sam2_hiera_large.pt",
+        "sam3.pt",
+        0.5,
+        "qwen3.5:9b",
+        "E:\\\\ComfyUI313\\\\ComfyUI\\\\output\\\\quadmask_00003_\\\\video_config_points.json"
+      ]
+    },
+    {
+      "id": 38,
+      "type": "Note",
+      "pos": [
+        21937.16098527436,
+        -32.16628897322392
+      ],
+      "size": [
+        314.17541024379534,
+        194.9458017013293
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "第5步，\n输入 视频和quadmask_0.mp4\n获取 视频和quadmask_0.mp4的latent\n\n可选保存lat，用于测试"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 37,
+      "type": "Note",
+      "pos": [
+        21504.29901932736,
+        -55.09765229719806
+      ],
+      "size": [
+        410.70582822776487,
+        211.68170685571602
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "第4步，\n获取提示词的emb，小显存，小内存，就分布来，大就不需要逐步\n可选save emb 保存该提示词的emb 避免反复推理"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 36,
+      "type": "Note",
+      "pos": [
+        21202.435558883502,
+        -85.11222629549195
+      ],
+      "size": [
+        292.15960220851775,
+        275.4376264949998
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "第3步，\n3.1 config输入第二步生成的json文件路径，选择sam3 sam2模型，\n\n3.2如果有gemini-3-pro-preview的API key，打开CMD ，输入\nexport GEMINI_API_KEY=\"你的gemini-3-pro-preview 的密钥\"\n\n3.3 如果没有，下载Ollama.exe，安装好后下载qwen3.5 9B 模型，或者其他多模态，最好是支持视频的那种，没有就用qwen3.5 9B吧，8G能跑，保存local vllm 的模型名字跟你下载的模型一样，推荐qwen3.5 9B\n\n3.4 点击运行\n\n生成quadmask_0.mp4"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 35,
+      "type": "Note",
+      "pos": [
+        20852.795228466402,
+        -397.34394887644834
+      ],
+      "size": [
+        320.96481488077916,
+        213.9043597175047
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "第二步，\n打开\\ComfyUI_Void\\void_model\\vlm_mask\\GUI.bat\n选择第一步生成的video_config.json，按0帧，到结束帧，分成几批获取点，每个帧点选的点，涵盖你要选择的物体的中心，四周最大边界（5个点），然后点击保存所有，\n\n生成video_config_points.json"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 34,
+      "type": "Note",
+      "pos": [
+        20467.098482671037,
+        -82.85668250690864
+      ],
+      "size": [
+        337.22125107423926,
+        206.9398937746579
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "第一步获取视频路径，\n\n生成video_config.json"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 33,
+      "type": "LoadVideo",
+      "pos": [
+        21486.547885090466,
+        -1032.7292831278646
+      ],
+      "size": [
+        270,
+        225.875
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            37
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadVideo"
+      },
+      "widgets_values": [
+        "quadmask_0 (1).mp4",
+        "image"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "LoadVideo",
+      "pos": [
+        21195.389062624436,
+        -1028.706266375047
+      ],
+      "size": [
+        270,
+        225.875
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            10,
+            30
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadVideo"
+      },
+      "widgets_values": [
+        "input_video (1).mp4",
+        "image"
+      ]
+    },
+    {
+      "id": 39,
+      "type": "Note",
+      "pos": [
+        22305.201138699744,
+        -21.139397073056617
+      ],
+      "size": [
+        444.57609165845133,
+        203.71218839969526
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "第6步，\n推理\noffload block num 越大越占用显存，\n保持tilling开启 除非你有大显存显存"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      2,
+      1,
+      0,
+      4,
+      0,
+      "MODEL"
+    ],
+    [
+      3,
+      7,
+      0,
+      4,
+      1,
+      "LATENT"
+    ],
+    [
+      7,
+      7,
+      0,
+      10,
+      0,
+      "LATENT"
+    ],
+    [
+      10,
+      11,
+      0,
+      13,
+      0,
+      "VIDEO"
+    ],
+    [
+      11,
+      13,
+      0,
+      7,
+      1,
+      "IMAGE"
+    ],
+    [
+      13,
+      15,
+      0,
+      7,
+      2,
+      "IMAGE"
+    ],
+    [
+      14,
+      17,
+      0,
+      16,
+      0,
+      "VIDEO"
+    ],
+    [
+      15,
+      13,
+      2,
+      17,
+      2,
+      "FLOAT"
+    ],
+    [
+      16,
+      13,
+      1,
+      17,
+      1,
+      "AUDIO"
+    ],
+    [
+      18,
+      18,
+      0,
+      17,
+      0,
+      "IMAGE"
+    ],
+    [
+      20,
+      20,
+      0,
+      7,
+      0,
+      "VAE"
+    ],
+    [
+      21,
+      20,
+      0,
+      18,
+      0,
+      "VAE"
+    ],
+    [
+      22,
+      4,
+      0,
+      18,
+      1,
+      "LATENT"
+    ],
+    [
+      23,
+      21,
+      0,
+      4,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      24,
+      3,
+      0,
+      21,
+      0,
+      "CLIP"
+    ],
+    [
+      25,
+      21,
+      0,
+      9,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      30,
+      11,
+      0,
+      24,
+      0,
+      "VIDEO"
+    ],
+    [
+      31,
+      24,
+      0,
+      27,
+      0,
+      "STRING"
+    ],
+    [
+      35,
+      31,
+      0,
+      26,
+      0,
+      "STRING"
+    ],
+    [
+      37,
+      33,
+      0,
+      15,
+      0,
+      "VIDEO"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "stage6",
+      "bounding": [
+        22267.079219644453,
+        -757.6798672228598,
+        714.849594737545,
+        700.8401020441646
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "stage4",
+      "bounding": [
+        21492.74218709146,
+        -774.2173759617839,
+        420,
+        610.7340621501229
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "stage5",
+      "bounding": [
+        21939.217033518526,
+        -763.525462340518,
+        316.0949083169835,
+        658.4249006035501
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "stage3",
+      "bounding": [
+        21188.881443064565,
+        -778.3767120546496,
+        294.33224301095834,
+        584.4205141069865
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "stage1",
+      "bounding": [
+        20428.363939138846,
+        -711.7261716556789,
+        387.3666717962733,
+        352.2310029663166
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6636883275252812,
+      "offset": [
+        -20199.158166286692,
+        1194.1014738301346
+      ]
+    },
+    "frontendVersion": "1.42.8"
+  },
+  "version": 0.4
+}
