@@ -1,0 +1,71 @@
+# Core deep learning
+torch
+torchvision
+torchdiffeq
+torchsde
+
+# Diffusion / generation
+diffusers
+accelerate
+transformers
+safetensors
+peft
+protobuf
+
+# Training utilities
+#deepspeed
+came-pytorch
+tensorboard
+
+# Vision / video
+opencv-python
+scikit-image
+imageio
+imageio-ffmpeg
+mediapy
+decord
+kornia
+albumentations
+timm
+tomesd3
+Pillow
+
+# Data / ML utilities
+numpy
+scipy
+scikit-learn
+datasets
+einops
+
+# Config / logging
+omegaconf
+ml_collections
+absl-py
+loguru
+tqdm
+matplotlib
+
+# NLP
+sentencepiece
+ftfy
+beautifulsoup4
+
+# Misc
+func-timeout
+requests
+packaging
+
+# sam3
+ftfy
+pycocotools
+timm
+
+# vlm
+openai
+
+
+# Optional: Gradio UI (only needed for app.py / demo)
+# gradio>=3.41.2,<=3.48.0
+
+# Note: SAM2 must be installed separately per the instructions at
+# https://github.com/facebookresearch/sam2?tab=readme-ov-file#installation
